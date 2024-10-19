@@ -1,0 +1,582 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Priyanshi Trivedi </title>
+    <link rel="stylesheet" href="/Portfolio/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./Portfolio/media.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:black ;
+    color: white;
+    /* font-family:'Poppins' sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(8, 33, 21);
+    height: 80px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    align-items: center;
+    margin: 0 23px;
+    list-style: none;
+    margin-left: 50px;
+    padding: -2px;
+    font-size: 1.1rem;
+}
+nav ul li a{
+   text-decoration: none;
+   color: white;
+}
+nav ul li a:hover{
+   color:white;
+   font-size: 1.3rem;
+   background-color: white(14, 12, 12);
+  
+}
+.buttons .btn:hover{
+    font-size: 1.5rem;
+     background-color: #1b2f07;
+}
+.right ul{
+    margin-top: 7px;
+}
+.right img{
+    height: 40px;
+    width: 40px;
+    border: white;
+    border-radius: 2px solid white;
+
+}
+.right .con{
+  margin-top: 12px;
+}
+.right ul li p:hover {
+    display: block;
+}
+.right p{
+   display: none;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+.firstSection > div{
+    width: 35%;
+}
+.leftSection{
+font-size: 3rem;
+margin: 72px;
+margin-left: 100px;
+}
+.leftSection .btn{
+    padding: 12px;
+    background: #000;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.leftSection .buttons{
+    padding: 20px 0;
+  
+}
+
+.rightSection img{
+   width: 80%;
+   border-radius: 100%;
+   margin: 77px 2px;
+   border: 3px solid rgb(105, 109, 105);
+}
+.purple{
+    color: blueviolet;
+}
+.red{
+    color: rgb(192, 193, 189);
+}
+#element{
+    color: rgb(225, 115, 30);
+}
+.secondSection{
+    margin: 40px;
+    padding: 50px;
+   margin-top: -100px;
+}
+.secondSection p{
+  margin:  3px ;
+  height: 100px;   
+}
+.secondSection h2{
+    font-size: 2.8rem;
+}
+#aboutMe p{
+   padding: 35px 10px;
+   font-size: 1.4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ;
+}
+table{
+    padding: 25px;
+   margin: 80px 5px 0 120px;
+   background-color: rgb(42, 94, 235);
+}
+table td{
+    font-size: 20px;
+    padding: 5px;
+   margin: 50px 5px 0 20px;
+   background-color: rgb(47, 236, 236);
+}
+
+.skills{
+    margin: 30px;
+    font-size: 1.5rem;
+}
+.course{
+    margin: 30px;
+    font-size: 1.5rem;
+}
+#others ol{
+    margin-top: -10px;
+    margin-left: 110px;
+}   
+
+#others h1{
+
+    font-size: 1.3rem;
+    margin-top: -20px;
+    margin-left: 70px;
+}
+
+#others ul{
+    margin-top: 12px;
+    margin-left: 110px;
+}
+#others ol li a{
+   color: rgb(223, 97, 156);
+    text-decoration: none;
+}
+#others ol li a:hover{
+   font-size: 1.2rem;
+  
+}
+#projects p{
+    margin: 20px;
+}
+#projects ul{  
+    margin-left: 110px;
+    margin-top: 20px;
+  
+}
+
+#projects ul li{  
+   padding: 5px;
+}
+#projects ul li a{
+    text-decoration: none;
+    color: rgb(223, 97, 156);
+    justify-content: center;
+    padding: 2px 20px;
+    align-items: center;
+}
+#contact{
+    font-size: 1.8rem;
+    margin: 72px;
+margin-left: 90px;
+}
+div.portion{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: rgb(9, 3, 3);
+    height: 200px;
+    margin-top: 10px;
+}
+
+div.portion p{
+  margin-left: 100px;
+  margin-top: 45px;
+  
+}
+div.portion .social{
+
+ margin: 10px;
+ align-items: center;
+ text-align: center;
+}
+div.rightPart .social {
+    margin-top: 50px;
+}
+
+div.portion  ul{
+display: flex;
+
+
+}
+div.portion .leftPart p{
+   font-size: 1.7rem;
+   margin-top: 50px;
+}
+div.portion ul li{
+padding: 5px;
+font-size: 1.7rem;
+text-decoration: none;
+list-style: none;
+margin: 5px;
+}
+div.portion ul li a{
+text-decoration: none;
+color: white;
+}
+div.portion ul li a img{
+height: 80px;
+width: 80px;
+}
+div.portion  img{
+    height: 70px;
+    width: 70px;
+    margin-top: -20px;
+}
+.container{
+    max-width: 1070px;
+    margin: auto;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #505e83;
+    padding: 25px 10px 5px;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 5px;
+    margin-left: 78px;
+    
+}
+.footer-col h4{
+   font-size: 20px;
+   color: #302020;
+   text-transform: capitalize;
+   margin-bottom: 30px;
+   margin-left: 10px;
+   margin-top: 15px;
+   
+}
+.footer-col ul li a{
+   color: #ffffff;
+   text-decoration: none;
+   padding: 15px;
+   color: #100101;
+}
+.footer-col ul{
+
+   margin-top: -15px;
+     
+}
+.footer-col ul li{
+
+    padding: 5px;
+    font-size: 1.03rem;
+    font-weight: 550;
+     
+}
+.footer-col ul li a:hover{
+   font-size: 1.01rem;
+   color: #efebeb;
+   
+   
+   
+}
+footer .rights{
+    padding: 25px;
+    text-align: center;
+    margin-top: 1px;
+}
+
+footer .last{
+    display: flex;
+    justify-content:center;
+    
+
+}
+div.last{
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+footer .last ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 2px;
+}
+footer .last ul li a:hover{
+    font-size: 1.08rem;
+}
+</style>
+ </head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#others">Others</a></li>
+                    <li><a href="#projects">Projects and Internships</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="con"><a href="#contact">Contact Details</a></li>
+                    <li><a href="mailto:priyanshitrivedi215@gmail.com"><img src="priyanshi.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                <span class="red"> Hi There !</span>
+                <div> My name is <span class="purple">Priyanshi Trivedi </span></div>
+                <div>I am a B.Tech Undergrad Student</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="./Priyanshi resume.pdf" target="_blank"><button class="btn">Download Resume</button></a>   
+                </div>
+            </div>
+
+            <div class="rightSection">
+               
+                <img src="./image.jpg" alt="">
+            </div>
+        </section>
+        <div class="secondSection" id="aboutMe">
+            <h2>About Me</h2>
+            <hr>
+            <p>Hello Everyone,<br><br> I’m Priyanshi Trivedi, currently in my 3rd year of B.Tech, specializing in Computer Science with a focus on Data Science.<br> <br>With a deep passion for software development, I thrive on solving intricate problems through creative and innovative approaches.
+            <br><br>Over the course of my studies, I’ve had the privilege of working on several projects that have sharpened my expertise, particularly in website development.
+            <br><br> I’m eager to expand my horizons through internships and collaborate on meaningful projects that make a real impact.<br><br><br><br>&nbsp;&nbsp;
+            </p>
+            <br><br><br><br>
+            <p>
+                <br>Thank you for visiting my portfolio ! &#10084;
+            </p>
+        </div>
+        <div class="secondSection" id="education">
+
+
+            <h2>Education</h2>
+            <hr>
+            <table border="10px">
+
+                <thead>
+                    <tr>
+                        <th>
+                        <td>COURSE / DEGREE</td>
+                        <td>INSTITUTE NAME</td>
+                        <td>BOARD / UNIVERSITY</td>
+                        <td>YEAR</td>
+                        <td> % / CGPA</td>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                        <td>B.Tech </td>
+                        <td>Maharana Pratap Engineering College </td>
+                        <td>Dr. &nbsp;A.p.j &nbsp;Aktu</td>
+                        <td>2022-26</td>
+                        <td>Pursuing</td>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                        <td>Intermediate</td>
+                        <td>Saraswati Vidya Mandir</td>
+                        <td>Uttar Pradesh Madhyamik Shiksha Parishad (UPMSP)</td>
+                        <td>2019-21</td>
+                        <td>82.5%</td>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                        <td>HighSchool</td>
+                        <td>Saraswati Vidya Mandir</td>
+                        <td>Uttar Pradesh Madhyamik Shiksha Parishad (UPMSP)</td>
+                        <td>2017-19</td>
+                        <td>82.8%</td>
+                        </th>
+                    </tr>
+                </thead>
+        </div>
+        </table>
+
+
+        </div>
+        <div class="secondSection" id="others">
+            <h2>Technical Strength</h2>
+            <hr>
+            <h3 class="skills">&#8680; Skills</h3>
+            <h1>Programming Languages</h1>
+            <ul>
+                <li>C | C++</li>
+                <li>PYTHON</li>
+                <li>JAVA</li>
+                <li>DSA (C++)</li>
+
+            </ul>
+            <br><br>
+            <h1>Web development </h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>REACT</li>
+                <li>SQL</li>
+            </ul>
+            <div>
+                <h3 class="course">&#8680; Certifications</h3>
+                <ol>
+                    <li>Online Vocational Training Program(JAVA) - Certificate of Completion <a href="java.pdf" target="_blank">
+                            &nbsp;View</a></li>
+                    <br>
+                    <li> Internal "Smart India Hackathon",2023 - Participation Certificate Of "SIH"<a href="internal sih.jpg" target="_blank"> &nbsp;View</a></li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="secondSection" id="projects">
+            <h2>Projects and Internships</h2>
+            <hr>
+
+            <ul>
+                <li>Personal Portfolio Website &nbsp;&nbsp;<a href="" target="_blank">Go To Website</a></li>
+                <li>Simple JavaScript
+                   Quiz Game<a
+                        href="" target="_blank">Go To Website</a> </li>
+                <li>WordPress
+                    Website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="" target="_blank">Go To Website</a></li>
+                <li>AI
+                    Chatbot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="" target="_blank">Go To Website</a></li>
+                <li>Rock Paper Scissor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" target="_blank">Go To Website</a></li>
+            </ul>
+        </div>
+
+        <div id="contact">
+            <h2>Contact Details</h2>
+            <hr>
+            <div class="portion">
+                <div class="leftPart">
+                    <p>Phone Number</p><br>
+                    <ul>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <li><img src="./Portfolio/images/Phone.png" alt=""></li>
+                        <li>630756XXXX</li>
+                    </ul>
+                </div>
+                <div class="rightPart">
+                    <p class="social">Social </p><br>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/priyanshi-trivedi-57a73a29b/" target="_blank"><img
+                                    src="./Portfolio/images/linkedin.png" alt=""></a></li>
+                        <li><a href="https://github.com/priyanshi-trivedi" target="_blank"><img src="./Portfolio/images/github.png"
+                                    alt=""></a></li>
+                        <li><a href="https://www.instagram.com/alishatrivedi7/" target="_blank"><img
+                                    src="./Portfolio/images/instagram.png" alt=""></a></li>
+                        <li><a href="" target="_blank"><img src="./Portfolio/images/tw.png" alt=""></a></li>
+                    </ul>
+                </div>
+
+
+                </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Other Profiles</h4>
+                    <ul>
+                        <li><a href="https://github.com/priyanshi-trivedi" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/user/priyanshitdu5w/"
+                                target="_blank">GeeksForGeeks</a></li>
+                        <li><a href="https://leetcode.com/u/Priyanshi_trivedi/">LeetCode</a></li>
+                        <li><a href="https://www.hackerrank.com/profile/@priyanshitrived3">HackerRank</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="#aboutMe">About Me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#others">Others</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect On</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/priyanshi-trivedi-57a73a29b/"target="_blank">Linkedin</a></li>
+                        <li><a href="https://www.instagram.com/alishatrivedi7/"target="_blank">Instagram</a></li>
+                        <li><a href=""target="_blank">Facebook</a></li>
+                        <li><a href=""target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rights">
+            <p>Copyright &copy 2024 TermsFeed ® . All rights reserved.</p>
+        </div>
+        <div class="last">
+            <ul>
+                <li><a href="">Privacy Policy |</li></a>
+            </ul>
+            <ul>
+                <li><a href="">Cookies Policy |</li></a>
+            </ul>
+            <ul>
+                <li><a href="">Terms of Use</li></a>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Passionate Developer', '&amp; a coding enthusiast.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
